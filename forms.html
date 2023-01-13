@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <form method="get" action="./home.html">
+      <fieldset>
+        <legend>THis is an important form</legend>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" value="Lakshay" disabled />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" placeholder="last name" required />
+        <br /><br />
+
+        <label>Email</label>
+        <input type="email" name="email" />
+
+        <label>Phone number</label>
+        <input type="number" />
+        <br />
+        <br />
+        <label>Password</label>
+        <input type="password" />
+
+        <label>Time</label>
+        <input type="time" />
+        <br />
+        <br />
+
+        <label>Date</label>
+        <input type="date" />
+        <br />
+        <br />
+        <label>Date Time</label>
+        <input type="datetime-local" />
+
+        <br />
+        <br />
+
+        <label>Date Time</label>
+        <input type="datetime-local" />
+
+        <br />
+        <br />
+
+        <label>Language</label><br /><br />
+        <label>English</label>
+        <input type="radio" name="Language" value="English" />
+        <label>hindi</label>
+        <input type="radio" name="Language" value="hindi" />
+        <label>Gujrati</label>
+        <input type="radio" name="Language" value="Gujrati" />
+        <label>Marathi</label>
+        <input type="radio" name="Language" value="Marathi" />
+        <br />
+        <br />
+        <label>Language</label><br /><br />
+        <label>English</label>
+        <input type="checkbox" name="lang" value="English" checked />
+        <label>hindi</label>
+        <input type="checkbox" name="lang" value="hindi" />
+        <label>Gujrati</label>
+        <input type="checkbox" name="lang" value="Gujrati" />
+        <label>Marathi</label>
+        <input type="checkbox" name="lang" value="Marathi" />
+        <br />
+        <br />
+
+        <label>Url</label>
+        <input type="url" />
+        <label> upload your file</label>
+        <input type="file" />
+
+        <textarea
+          name="message"
+          maxlength="250"
+          rows="10"
+          cols="50"
+          placeholder="hello kasjhdjkahsuheda"
+        ></textarea>
+        <br />
+
+        <label>select your current choice</label>
+
+        <select name="progress" multiple>
+          <option value="" disabled selected hidden>select your ans</option>
+          <optgroup label="Beginner">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">Javascript</option>
+            <option value="4">React</option>
+          </optgroup>
+          <optgroup label="Expert">
+            <option value="5">Node</option>
+            <option value="6">Mongo</option>
+            <option value="7">Express</option>
+            <option value="8">Authentication</option>
+          </optgroup>
+        </select>
+        <select>
+          <option value="" disabled selected hidden>
+            choose your Language
+          </option>
+          <optgroup label="Language">
+            <option value="english">English</option>
+            <option value="hindi">hindi</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <br />
+      <br />
+
+      <button type="reset">reset</button>
+      <input type="button" value="Button" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
